@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.example.farmacia.model.Categoria"/>
+    <fullyQualifiedTypeName name="com.example.farmacia.repository.ProdutoRepository"/>
+    <fullyQualifiedTypeName name="com.example.farmacia.model.Produto"/>
+    <fullyQualifiedTypeName name="com.example.farmacia.repository.CategoriaRepository"/>
+</qualifiedTypeNameHistroy>
