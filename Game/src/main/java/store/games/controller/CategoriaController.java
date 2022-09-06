@@ -1,4 +1,4 @@
-package com.example.farmacia.controller;
+package store.games.controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -20,8 +20,11 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.example.farmacia.model.Categoria;
-import com.example.farmacia.repository.CategoriaRepository;
+import com.example.farmacia.model.Produto;
+import com.example.farmacia.repository.ProdutoRepository;
+
+import store.games.model.Categoria;
+import store.games.repository.CategoriaRepository;
 
 @RestController
 @RequestMapping("/categoria")
@@ -74,5 +77,4 @@ public class CategoriaController {
 		
 		repository.deleteById(id);				
 	}
-
 }
