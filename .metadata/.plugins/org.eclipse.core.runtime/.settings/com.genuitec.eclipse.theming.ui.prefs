@@ -1,9 +1,13 @@
 applyBackground=false
 approved.defs.file.last.changed.time=1649720987000
+codetogether.announce.displayed=true
 configurationInstallLocation=/C\:/Users/Eu/eclipse/java-2022-062/eclipse/
+ct.reengagement.display.after=1673608712253
+ct.upsell.display.after=1662900591004
 eclipse.preferences.version=1
 iconcolormode=primary
-last.download.attempt.time=1662379733358
-lastConfiguration=1662379701168
-newinstall=true
+last.download.attempt.time=1662981520478
+lastConfiguration=1663003142959
+newinstall=false
+showWelcomeDialog=false
 workbench.theme=Dark Gray

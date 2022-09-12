@@ -1,3 +1,10 @@
 codetogether.main.view.displayed=true
+default.auth=auto
+default.cursor=JOIN_CURSOR_ASK
+default.drive=all
+default.edit=all
+default.run=all
+default.team.only=false
 eclipse.preferences.version=1
+reported.codetogether=true
 uuid=DB8e0Bk6lmAzPiSoRJmEez
