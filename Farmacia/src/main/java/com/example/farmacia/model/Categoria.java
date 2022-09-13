@@ -27,7 +27,7 @@ public class Categoria {
 	
     @NotBlank(message="O atributo tipo é obrigatório e não pode utilizar espaços em branco")
     @Size(min= 2, max=100, message="O campo precisa ter no minimo 4 letras e no maximo 100 letras")
-    private String tipo;
+    private String descricao;
 
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
