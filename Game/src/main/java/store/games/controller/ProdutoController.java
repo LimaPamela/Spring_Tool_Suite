@@ -21,7 +21,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
 import store.games.model.Produto;
-import store.games.repository.CategoriaRepository;
 import store.games.repository.ProdutoRepository;
 
 @RestController
@@ -45,9 +44,9 @@ public class ProdutoController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 
 	}
-	@GetMapping("/identificacao/{identificacao}")
-	public ResponseEntity<List<Produto>> getByTitulo(@PathVariable String identificacao){
-		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(identificacao));
+	@GetMapping("/nome/{nome}")
+	public ResponseEntity<List<Produto>> getByTitulo(@PathVariable String nome){
+		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 		
 	}
 	

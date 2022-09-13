@@ -20,9 +20,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.example.farmacia.model.Produto;
-import com.example.farmacia.repository.ProdutoRepository;
-
 import store.games.model.Categoria;
 import store.games.repository.CategoriaRepository;
 
@@ -33,7 +30,6 @@ public class CategoriaController {
 	
 	@Autowired
 	private CategoriaRepository repository;
-	
 	
 	@GetMapping
 	public ResponseEntity<List<Categoria>> resposta(){
@@ -49,8 +45,8 @@ public class CategoriaController {
 	}
 
 	@GetMapping("/tipo/{tipo}")
-	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable String tipo){
-		return ResponseEntity.ok(repository.findAllByTituloContainingIgnoreCase(tipo));
+	public ResponseEntity<List<Categoria>> getByDescricao(@PathVariable Long tipo){
+		return ResponseEntity.ok(repository.findAllByTipoContainingIgnoreCase(tipo));
 	}
 	
 	@PostMapping
@@ -77,4 +73,5 @@ public class CategoriaController {
 		
 		repository.deleteById(id);				
 	}
+
 }
